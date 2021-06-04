@@ -1,18 +1,157 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <style>
-    body{
-      padding:10px;
-      margin:10px;
-      background-color:#e3e3e3;
-    }
-    h1{
-     color:#000011;
-    }
-  </style>
-  </head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>unknown989's Portfolio</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="shortcut icon" type="image/jpg" href="https://raw.githubusercontent.com/unknown989/unknown989/master/images/logo.png"/>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+		html, body{
+			margin:0;
+			padding:0;
+			height:100%;
+			background-color: #222;
+			scroll-behavior: smooth;
+			overflow: hidden;
+		}
+		#navbar{
+			background-color: #333;
+			width: 8%;
+			height: 100%;
+			border-right: 3px solid #333;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			position: fixed;
+		}
+		#navbar-button{
+			height: 100%;
+			
+			border: none;
+			margin-top: 1px;
+			margin-bottom: 1px;
+			outline: none;
+			cursor: pointer;
+			padding: 5px;
+			font-size: 20px;
+			transition: 0.2s ease-in;
+		}
+		#navbar-button:hover{
+			font-size: 25px;
+		}
+		h1{
+			font-family: 'Titillium Web', sans-serif;
+		}p{
+			font-family: 'Titillium Web', sans-serif;
+		}
+		a{
+			text-decoration: none;
+			color: #ddd;
+			font-weight: bold;
+		}
+		.page{
+			display: block;
+			height: 100%;
+			width: 92%;
+			float: right;
+		}
+		.selected{
+			color: #111;
+			background-color: #777;
+		}
+		.unselected{
+			color: #777;
+			background-color: #111;
+		}
+		#home-main{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #777;
+		}
+		#intro-main{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			word-wrap: normal;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #777;
+			text-align: center;
+		}
+		#gh-main{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			word-wrap: normal;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #777;
+			text-align: center;
+		}
+		#projs-main{
+			width: 100%;
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: auto;
+			display: flex;
+			word-wrap: normal;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #777;
+			text-align: center;
+		}
+
+	</style>
+</head>
 <body>
-<h1 align="center">Portfolio Coming soon...</h1>
+
+<div id="navbar">
+	<button class="nvbtn selected" to="home" id="navbar-button"><i class="fa fa-home"></i></button>
+	<button class="nvbtn unselected" to="intro" id="navbar-button"><i class="fa fa-question"></i></button>
+	<button class="nvbtn unselected" to="projs" id="navbar-button"><i class="fa fa-archive"></i></button>
+	<button class="nvbtn unselected" to="gh" id="navbar-button"><i class="fa fa-github"></i></button>
+	<button class="nvbtn unselected" to="contact" id="navbar-button"><i class="fa fa-phone"></i></button>
+</div>
+
+<div class="page" id="home">
+	
+	<div id="home-main">
+		<img src="https://raw.githubusercontent.com/unknown989/unknown989/master/images/logo.png" width="200" height="200">
+		<h1>unknown989</h1>
+		<p>Hi I'm Omar , a 16 years old developer , please check <a href="javascript:goto(null,'intro')">INTRO</a> to know more.!</p>
+	</div>
+
+</div>
+<div class="page" id="intro">
+	<div id="intro-main">
+		<p>Hello, I'm Omar , a 16 years old developer from Morocco , I started programming since I was about 9 or 8. <br>Anyway If you wanna hire me please check the <a href="javascript:goto(null,'contact')">CONTACT</a> page</p>
+	</div>
+</div>
+<div class="page" id="projs">
+	
+	<div id="projs-main">
+		<p id="pp"></p>
+	</div>
+</div>
+<div class="page" id="gh">
+	<div id="gh-main">
+		
+	<div class="github-card" data-github="unknown989" data-width="400" data-height="319" data-theme="medium"	></div>
+	</div>
+</div>
+<div class="page" id="contact">contact</div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
