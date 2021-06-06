@@ -1,5 +1,3 @@
-
-
 $(document).ready(()=>{
 	var loc = window.location.hash.replace("#","");
 	$(".nvbtn").each((i,e)=>{
