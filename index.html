@@ -17,6 +17,10 @@
 			background-color: #222;
 			scroll-behavior: smooth;
 			overflow: hidden;
+			background-image:url("./pattern3.png");
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
 		}
 		#navbar{
 			background-color: #333;
@@ -45,13 +49,21 @@
 		}
 		h1,h2{
 			font-family: 'Titillium Web', sans-serif;
+
 		}p{
 			font-family: 'Titillium Web', sans-serif;
+				font-family: bold;
 		}
 		a{
+			font-family: 'Titillium Web', sans-serif;
 			text-decoration: none;
 			color: #ddd;
-			font-weight: bold;
+			font-weight: bolder;
+		}
+		.pwithbg{
+			background-color: #222;
+			border: 1px solid #555;
+			padding: 2px;
 		}
 		.page{
 			display: block;
@@ -184,14 +196,14 @@
 	<div id="home-main">
 		<img src="https://raw.githubusercontent.com/unknown989/unknown989/master/images/logo.png" width="200" height="200">
 		<h1>unknown989</h1>
-		<p>Hi I'm Omar , a 16 years old developer , please check <a href="javascript:goto(null,'intro')">INTRO</a> to know more.!</p>
+		<p class="pwithbg">Hi I'm Omar , a 16 years old developer , please check <a href="javascript:goto(null,'intro')">INTRO</a> to know more.!</p>
 	</div>
 
 </div>
 <div class="page" id="intro">
 	<div id="intro-main">
 		<h1>Introduction</h1>
-		<p>Hello, I'm Omar , a 16 years old developer from Morocco , I started programming since I was about 9 or 8. <br>Anyway If you wanna hire me please check the <a href="javascript:goto(null,'contact')">CONTACT</a> page</p>
+		<p class="pwithbg">Hello, I'm Omar , a 16 years old developer from Morocco , I started programming since I was about 9 or 8. <br>Anyway If you wanna hire me please check the <a href="javascript:goto(null,'contact')">CONTACT</a> page</p>
 	</div>
 </div>
 <div class="page" id="projs">
@@ -211,7 +223,7 @@
 <div class="page" id="contact">
 	<div id="contact-main">
 		<h1>Contact</h1>
-		<p>(This website uses GitHub pages and cannot use a backend contact form)</p>
+		<p class="pwithbg">(This website uses GitHub pages and cannot use a backend contact form)</p>
 		<h1>Social Media</h1>
 		<a target="_blank" href="https://ma.linkedin.com/in/omar-mouttaki-bb0978144/en"><button class="btn-normal"><i class="fa fa-linkedin" aria-hidden="true"></i></button></a>
 		<a target="_blank" href="https://www.instagram.com/brian_polier/"><button class="btn-normal"><i class="fa fa-instagram" aria-hidden="true"></i></button></a>
