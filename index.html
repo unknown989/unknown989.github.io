@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="unknown989's portfolio">
+	<meta charset="utf-8">
+	<title>unknown989's Portfolio</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CLPZV4JQQZ"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-CLPZV4JQQZ');
+	</script>
+	<link rel="shortcut icon" type="image/jpg"
+		href="https://raw.githubusercontent.com/unknown989/unknown989/master/images/logo.png" />
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background-color: #222;
+			scroll-behavior: smooth;
+			background-image: url("./static/pattern.png");
+			background-position: center;
+			background-size: cover;
+		}
+
+		#navbar {
+			background-color: #333;
+			width: 8%;
+			height: 100%;
+			border-right: 3px solid #333;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			position: fixed;
+		}
+
+		#navbar-button {
+			height: 100%;
+
+			border: none;
+			margin-top: 1px;
+			margin-bottom: 1px;
+			outline: none;
+			cursor: pointer;
+			padding: 5px;
+			font-size: 20px;
+			transition: 0.2s ease-in;
+		}
+
+		#navbar-button:hover {
+			font-size: 25px;
+		}
+
+		h1,
+		h2 {
+			font-family: 'Titillium Web', sans-serif;
+
+		}
+
+		p {
+			font-family: 'Titillium Web', sans-serif;
+			font-family: bold;
+		}
+
+		a {
+			font-family: 'Titillium Web', sans-serif;
+			text-decoration: none;
+			color: #ddd;
+			font-weight: bolder;
+		}
+
+		.pwithbg {
+			background-color: #222;
+			border: 1px solid #555;
+			padding: 2px;
+		}
+
+		#root {
+			width: 100%;
+			height: 100%;
+		}
+
+		.page {
+			display: block;
+			height: 100%;
+			width: 92%;
+			float: right;
+		}
+
+		.selected {
+			color: #111;
+			background-color: #777;
+		}
+
+		.unselected {
+			color: #777;
+			background-color: #111;
+		}
+
+		#home-main {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #777;
+		}
+
+		#intro-main {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			word-wrap: normal;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #777;
+			text-align: center;
+		}
+
+		#gh-main {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			word-wrap: normal;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #777;
+			text-align: center;
+		}
+
+		#contact-main {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			word-wrap: normal;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #777;
+			text-align: center;
+		}
+
+		.btn-normal {
+			width: 100px;
+			height: 2rem;
+			background-color: #333;
+			color: #777;
+			border: none;
+			transition: 0.3s ease;
+			cursor: pointer;
+			outline: none;
+		}
+
+		.btn-normal:hover {
+			background-color: #111;
+			color: #fff;
+		}
+
+		#projs-main {
+			width: 100%;
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: auto;
+			display: flex;
+			word-wrap: normal;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #777;
+			text-align: center;
+		}
+
+		#projs-list {
+			width: 100%;
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: auto;
+			display: flex;
+			word-wrap: normal;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #777;
+			text-align: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		#proj-card {
+			width: 400px;
+			height: 310px;
+			margin: 10px;
+			background-color: #111;
+			padding-bottom: 10px;
+		}
+
+		#proj-card-desc {
+			overflow-y: auto;
+			overflow-x: auto;
+			height: 120px;
+			padding: 10px;
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="navbar">
+		<button class="nvbtn selected link" to="/" id="navbar-button" aria-label="home"><i
+				class="fa fa-home"></i></button>
+		<button class="nvbtn unselected link" to="/intro" aria-label="introduction" id="navbar-button"><i
+				class="fa fa-question"></i></button>
+		<button class="nvbtn unselected link" to="/projects" aria-label="projects" id="navbar-button"><i
+				class="fa fa-archive"></i></button>
+		<button class="nvbtn unselected link" to="/github" aria-label="github" id="navbar-button"><i
+				class="fa fa-github"></i></button>
+		<button class="nvbtn unselected link" to="/contact" aria-label="contact" id="navbar-button"><i
+				class="fa fa-phone"></i></button>
+	</div>
+	<div id="root"></div>
+	<script type="module" src="./js/script.js"></script>
+	<script src="./js/pmvc.js"></script>
+
+</body>
+
+</html>
