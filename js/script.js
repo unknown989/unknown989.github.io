@@ -12,6 +12,7 @@ mvc.addRoute("github", "/github", Github);
 mvc.addRoute("contact", "/contact", Contact);
 
 window.addEventListener("historychange", (e) => {
+  // Listening for changes so that we can change the selected navbar button
   var currentySelected = document.getElementsByClassName("selected")[0];
   var route = mvc.getCurrentRoute();
   currentySelected.classList.remove("selected");
